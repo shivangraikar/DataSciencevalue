@@ -1,7 +1,2 @@
 streamlit
 numpy
-random
-math
-boto3
-time
-os
