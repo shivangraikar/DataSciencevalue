@@ -292,7 +292,7 @@ else:
 
 
 # Model intercept
-INTERCEPT = 0.8129168570592595
+INTERCEPT = 0.9131248369325842
 # Model coefficients
 COEFS = [['q1', 'q1_female', -0.3487355484270125],
          ['q2', 'q2_18_21', -1.96234161804328],
