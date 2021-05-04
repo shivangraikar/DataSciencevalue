@@ -32,7 +32,7 @@ else:
 	q2_six=1
 
 
-country = st.selectbox("3. In which Coutry do you currently reside?", ('United States of America','India','China'))
+country = st.selectbox("3. In which Country do you currently reside?", ('United States of America','India','China'))
 q3_usa=q3_ind=q3_ch=0
 if country == 'United States of America':
 	q3_usa=1
@@ -123,7 +123,7 @@ def get_activity():
 	'Analyze and understand data to influence product or business decisions', 
 	'None of these activities are an important part of my role at work',
 	'Do research that advances the state of the art of machine learning',
-	'Build and/or run the data infrasturcture that my business uses for storing, analyzing and operationlizing the data'])
+	'Build and/or run the data infrasturcture that my business uses for storing, analyzing and operationalizing the data'])
 	if 'Building prototypes to explore applying machine learning to new areas' in activity:
 		q9_proto=1
 	if 'Build and/or run a machine learning service that operationally improves my product or workflows' in activity:
@@ -134,7 +134,7 @@ def get_activity():
 		q9_nota=1
 	if 'Do research that advances the state of the art of machine learning' in activity:
 		q9_do=1
-	if 'Build and/or run the data infrasturcture that my business uses for storing, analyzing and operationlizing the data' in activity:
+	if 'Build and/or run the data infrasturcture that my business uses for storing, analyzing and operationalizing the data' in activity:
 		q9_data=1
 	return q9_proto,q9_ml,q9_an,q9_nota,q9_do,q9_data
 q9_proto,q9_ml,q9_an,q9_nota,q9_do,q9_data = get_activity()
