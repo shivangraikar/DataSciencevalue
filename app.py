@@ -13,98 +13,73 @@ gender = st.radio("1. What is your gender?", ('Male', 'Female'))
 q1_male = q1_female=0
 if gender == 'Male':
 	q1_male=1
-	st.write(q1_male,q1_female)
 else:
 	q1_female=1
-	st.write(q1_male,q1_female)
 
 age = st.slider("2. Choose your age: ",18, 55,)
 q2_one=q2_two=q2_three=q2_four=q2_five=q2_six=0
 if age>= 18 and age<22:
 	q2_one=1
-	st.write(q2_one,q2_two,q2_three,q2_four,q2_five,q2_six)
 elif age>=22 and age<25:
 	q2_two=1
-	st.write(q2_one,q2_two,q2_three,q2_four,q2_five,q2_six)
 elif age>=25 and age<30:
 	q2_three=1
-	st.write(q2_one,q2_two,q2_three,q2_four,q2_five,q2_six)
 elif age>=30 and age<35:
 	q2_four=1
-	st.write(q2_one,q2_two,q2_three,q2_four,q2_five,q2_six)
 elif age>=35 and age<40:
 	q2_five=1
-	st.write(q2_one,q2_two,q2_three,q2_four,q2_five,q2_six)
 else:
 	q2_six=1
-	st.write(q2_one,q2_two,q2_three,q2_four,q2_five,q2_six)
 
 
 country = st.selectbox("3. In which Coutry do you currently reside?", ('United States of America','India','China'))
 q3_usa=q3_ind=q3_ch=0
 if country == 'United States of America':
 	q3_usa=1
-	st.write(q3_usa,q3_ind,q3_ch)
 elif country == 'India':
 	q3_ind=1
-	st.write(q3_usa,q3_ind,q3_ch)
 else:
 	q3_ch=1	
-	st.write(q3_usa,q3_ind,q3_ch)
 
 
 degree = st.selectbox("4. What is your level of education?", ("Bachelor's degree","Master's degree","Doctoral's degree"))
 q4_b=q4_m=q4_d=0
 if degree == "Bachelor's degree":
 	q4_b=1
-	st.write(q4_b,q4_m,q4_d)
 elif degree == "Master's degree":
 	q4_m=1
-	st.write(q4_b,q4_m,q4_d)
 else:
 	q4_d=1
-	st.write(q4_b,q4_m,q4_d)
 
 
 title = st.selectbox("5. What is your current title?", ('Student','Data Scientist','Data Analyst','Research Scientist','Software Engineer','Other'))
 q5_s=q5_ds=q5_da=q5_rs=q5_se=q5_o=0
 if title == 'Student':
 	q5_s=1
-	st.write(q5_s,q5_ds,q5_da,q5_rs,q5_se,q5_o)
 elif title == 'Data Scientist':
 	q5_ds=1
-	st.write(q5_s,q5_ds,q5_da,q5_rs,q5_se,q5_o)
 elif title == 'Data Analyst':
 	q5_da=1
-	st.write(q5_s,q5_ds,q5_da,q5_rs,q5_se,q5_o)
 elif title == 'Research Scientist':
 	q5_rs=1
-	st.write(q5_s,q5_ds,q5_da,q5_rs,q5_se,q5_o)
 elif title == 'Software Engineer':
 	q5_se=1
-	st.write(q5_s,q5_ds,q5_da,q5_rs,q5_se,q5_o)
 else:
 	q5_o=1
-	st.write(q5_s,q5_ds,q5_da,q5_rs,q5_se,q5_o)
 
 
 ind = st.selectbox("6. In what industry is your current employer/contract?", ('Accounting/Finance', 'Computers/Technology', 'Academics/Education', 'Other', 'I am a student'))
 q6_af=q6_c=q6_ae=q6_o=q6_s=0
 if ind == 'Accounting/Finance':
 	q6_af=1
-	st.write(q6_af,q6_c,q6_ae,q6_o,q6_s)
 elif ind == 'Computers/Technology':
 	q6_c=1
-	st.write(q6_af,q6_c,q6_ae,q6_o,q6_s)
 elif ind == 'Academics/Education':
 	q6_ae=1
-	st.write(q6_af,q6_c,q6_ae,q6_o,q6_s)
 elif ind == 'Other':
 	q6_o=1
-	st.write(q6_af,q6_c,q6_ae,q6_o,q6_s)
 else:
 	q6_s=1
-	st.write(q6_af,q6_c,q6_ae,q6_o,q6_s)
 	
 
 exp = st.selectbox("7. How many years of experience do you have in your current role?", ('0-1','1-2','2-3','3-4','4-5','5-10','10-15'))
