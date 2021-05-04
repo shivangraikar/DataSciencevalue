@@ -86,48 +86,34 @@ exp = st.selectbox("7. How many years of experience do you have in your current 
 q7_first=q7_second=q7_third=q7_fourth=q7_fifth=q7_sixth=q7_seventh=0
 if exp == '0-1':
 	q7_first=1
-	st.write(q7_first,q7_second,q7_third,q7_fourth,q7_fifth,q7_sixth,q7_seventh)
 elif exp == '1-2':
 	q7_second=1
-	st.write(q7_first,q7_second,q7_third,q7_fourth,q7_fifth,q7_sixth,q7_seventh)
 elif exp == '2-3':
 	q7_third=1
-	st.write(q7_first,q7_second,q7_third,q7_fourth,q7_fifth,q7_sixth,q7_seventh)
 elif exp == '3-4':
 	q7_fourth=1
-	st.write(q7_first,q7_second,q7_third,q7_fourth,q7_fifth,q7_sixth,q7_seventh)
 elif exp == '4-5':
 	q7_fifth=1
-	st.write(q7_first,q7_second,q7_third,q7_fourth,q7_fifth,q7_sixth,q7_seventh)
 elif exp == '5-10':
 	q7_sixth=1
-	st.write(q7_first,q7_second,q7_third,q7_fourth,q7_fifth,q7_sixth,q7_seventh)
 else:
 	q7_seventh=1
-	st.write(q7_first,q7_second,q7_third,q7_fourth,q7_fifth,q7_sixth,q7_seventh)
 
 
 models = st.selectbox("8. Does your current employer incorporate machine learning methods into their business?", ('We have well established ML methods', 'We recently started using ML methods', 'We only use ML methods for generating insights', 'We are exploring ML methods', 'No', 'I dont know'))
 q8_wehave=q8_werec=q8_weonly=q8_weare=q8_no=q8_idk=0
 if models == 'We have well established ML methods':
 	q8_wehave=1
-	st.write(q8_wehave,q8_werec,q8_weonly,q8_weare,q8_no,q8_idk)
 elif models == 'We recently started using ML methods':
 	q8_werec=1
-	st.write(q8_wehave,q8_werec,q8_weonly,q8_weare,q8_no,q8_idk)
 elif models == 'We only use ML methods for generating insights':
 	q8_weonly=1
-	st.write(q8_wehave,q8_werec,q8_weonly,q8_weare,q8_no,q8_idk)
 elif models == 'We are exploring ML methods':
 	q8_weare=1
-	st.write(q8_wehave,q8_werec,q8_weonly,q8_weare,q8_no,q8_idk)
 elif models == 'No':
 	q8_no=1
-	st.write(q8_wehave,q8_werec,q8_weonly,q8_weare,q8_no,q8_idk)
 else:
 	q8_idk=1
-	st.write(q8_wehave,q8_werec,q8_weonly,q8_weare,q8_no,q8_idk)
-
 
 
 def get_activity():
@@ -150,7 +136,6 @@ def get_activity():
 		q9_do=1
 	if 'Build and/or run the data infrasturcture that my business uses for storing, analyzing and operationlizing the data' in activity:
 		q9_data=1
-	st.write(q9_proto,q9_ml,q9_an,q9_nota,q9_do,q9_data)
 	return q9_proto,q9_ml,q9_an,q9_nota,q9_do,q9_data
 q9_proto,q9_ml,q9_an,q9_nota,q9_do,q9_data = get_activity()
 
@@ -159,19 +144,14 @@ note = st.selectbox('10. Which of the following hosted notebooks have you used a
 q10_aws=q10_ms=q10_gcp=q10_ibm=q10_idk=0
 if note =='Amazon web services':
 	q10_aws=1
-	st.write(q10_aws,q10_ms,q10_gcp,q10_ibm,q10_idk)
 elif note =='Microsoft azure':
 	q10_ms=1
-	st.write(q10_aws,q10_ms,q10_gcp,q10_ibm,q10_idk)
 elif note =='Google cloud platform':
 	q10_gcp=1
-	st.write(q10_aws,q10_ms,q10_gcp,q10_ibm,q10_idk)
 elif note == 'IBM cloud':
 	q10_ibm=1
-	st.write(q10_aws,q10_ms,q10_gcp,q10_ibm,q10_idk)
 else:
 	q10_idk=1
-	st.write(q10_aws,q10_ms,q10_gcp,q10_ibm,q10_idk)
 
 
 def get_languages():
@@ -201,7 +181,6 @@ def get_languages():
 		q11_vb=1
 	if 'SAS' in languages:
 		q11_sas=1
-	st.write(q11_r,q11_php,q11_java,q11_bash,q11_js,q11_chash,q11_matlab,q11_sql,q11_python,q11_cpp,q11_vb,q11_sas)
 	return q11_r,q11_php,q11_java,q11_bash,q11_js,q11_chash,q11_matlab,q11_sql,q11_python,q11_cpp,q11_vb,q11_sas
 q11_r,q11_php,q11_java,q11_bash,q11_js,q11_chash,q11_matlab,q11_sql,q11_python,q11_cpp,q11_vb,q11_sas= get_languages()
 	
@@ -210,16 +189,12 @@ time = st.selectbox('12. What percent of your time at work or school is spent ac
 q12_first=q12_second=q12_third=q12_fourth=0
 if time =='1 to 25':
 	q12_first=1
-	st.write(q12_first,q12_second,q12_third,q12_fourth)
 elif time =='26 to 49':
 	q12_second=1
-	st.write(q12_first,q12_second,q12_third,q12_fourth)
 elif time=='50 to 74':
 	q12_third=1
-	st.write(q12_first,q12_second,q12_third,q12_fourth)
 else:
 	q12_fourth=1
-	st.write(q12_first,q12_second,q12_third,q12_fourth)
 
 
 def get_datatype():
@@ -245,7 +220,6 @@ def get_datatype():
 		q13_sensor=1
 	if 'Numerical' in datatype:
 		q13_numerical=1
-	st.write(q13_genetic,q13_video,q13_geo,q13_time,q13_tabular,q13_categorical,q13_image,q13_text,q13_sensor,q13_numerical)
 	return q13_genetic,q13_video,q13_geo,q13_time,q13_tabular,q13_categorical,q13_image,q13_text,q13_sensor,q13_numerical
 q13_genetic,q13_video,q13_geo,q13_time,q13_tabular,q13_categorical,q13_image,q13_text,q13_sensor,q13_numerical = get_datatype()
 
@@ -254,16 +228,12 @@ metrics = st.selectbox('14. What metrics do you or your organization use to dete
 q14_na=q14_revenue=q14_unfair=q14_accuracy=0
 if metrics=='Not Applicable':
 	q14_na=1
-	st.write(q14_na,q14_revenue,q14_unfair,q14_accuracy)
 elif metrics=='Revenue Goals':
 	q14_revenue=1
-	st.write(q14_na,q14_revenue,q14_unfair,q14_accuracy)
 elif metrics=='Unfair Bias':
 	q14_unfair=1
-	st.write(q14_na,q14_revenue,q14_unfair,q14_accuracy)		
 else:
 	q14_accuracy=1
-	st.write(q14_na,q14_revenue,q14_unfair,q14_accuracy)
 
 
 # Model intercept
