@@ -1,3 +1,5 @@
 streamlit == 0.62.1
 numpy == 1.20.2
 boto3 == 1.17.60
+plotly == 4.14.3
+matplotlib == 3.4.1
