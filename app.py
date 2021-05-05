@@ -348,11 +348,15 @@ COEFS = [['q1', 'q1_female', -0.3487355484270125],
 li = [q1_female,q2_one,q2_two,q2_three,q2_four,q2_five,q2_six,
 q3_ch,q3_ind,q3_usa,q4_b,q4_d,
 q5_da,q5_ds,q5_o,q5_rs,q5_se,q5_s,
-q6_ae,q6_af,q6_c,q6_o,q7_first,q7_second,q7_seventh,q7_third,q7_fourth,q7_fifth,q7_sixth,
+q6_ae,q6_af,q6_c,q6_o,q7_first,q7_second,q7_seventh,q7_third,
+q7_fourth,q7_fifth,q7_sixth,
 q8_idk,q8_no,q8_weare,q8_wehave,q8_werec,q8_weonly,
 q9_an,q9_ml,q9_data,q9_proto,q9_do,q9_nota,
-q10_gcp,q10_aws,q10_ms,q10_ibm,q11_python,q11_r,q11_sql,q11_bash,q11_java,q11_js,q11_vb,q11_cpp,q11_matlab,q11_chash,q11_php,q11_sas,
-q12_first,q12_second,q12_third,q12_fourth,q13_categorical,q13_genetic,q13_geo,q13_image,q13_numerical,q13_sensor,q13_tabular,q13_text,q13_time,q13_video,
+q10_gcp,q10_aws,q10_ms,q10_ibm,q11_python,q11_r,q11_sql,
+q11_bash,q11_java,q11_js,q11_vb,q11_cpp,q11_matlab,q11_chash,
+q11_php,q11_sas,q12_first,q12_second,q12_third,q12_fourth,
+q13_categorical,q13_genetic,q13_geo,q13_image,q13_numerical,
+q13_sensor,q13_tabular,q13_text,q13_time,q13_video,
 q14_revenue,q14_accuracy,q14_unfair,q14_na]
 
 
