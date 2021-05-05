@@ -356,12 +356,12 @@ if st.button('Submit'):
 		'score': score,
 		'proba': proba}
 	st.write(score,proba)
-	st.write('Form succesfully submitted')
-	
-	my_bar = st.progress(0.05)
+	my_bar = st.progress(0)
 	for percent_complete in range(100):
-		tm.sleep(0)
+		tm.sleep(0.05)
 		my_bar.progress(percent_complete+1)
 	my_bar.empty()
+	st.write('Form succesfully submitted')
+	
 	st.balloons()
 	score = int(score)
