@@ -4,6 +4,12 @@ from scorer import calculate_score
 from pre_treatment import treat_input
 from probability import calc_proba
 from normalizer import normalize
+import time as tm
+import pandas as pd
+import plotly.express as px
+from plotly.subplots import make_subplots
+import plotly.graph_objects as go
+import matplotlib.pyplot as plt
 
 st.title('Intelligent Salary Predictor')
 st.header("Please fill the survey form")
@@ -352,7 +358,7 @@ if st.button('Submit'):
 	st.write(score,proba)
 	st.write('Form succesfully submitted')
 	
-	my_bar = st.progress(0)
+	my_bar = st.progress(0.05)
 	for percent_complete in range(100):
 		tm.sleep(0)
 		my_bar.progress(percent_complete+1)
