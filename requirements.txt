@@ -1,4 +1,4 @@
-streamlit == 0.62.1
+streamlit == 0.81.1
 numpy == 1.20.2
 boto3 == 1.17.60
 plotly == 4.14.3
