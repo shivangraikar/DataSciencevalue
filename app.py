@@ -10,11 +10,33 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
+import base64
+
+
+st.set_page_config(
+page_title="ISP",
+page_icon="logo.png",
+layout="centered",
+)
 
 st.title('Intelligent Salary Predictor')
-st.header("Please fill the survey form")
+st.write("")
+st.write("")
+st.write("Welcome User! This intelligent salary predictor(ISP) helps you assess yourself in the field of data science. How? It's easy! Just fill in the survey form.")
+st.write("After submitting your response to the form, you will receive three values:")
+st.markdown("*  A score: the maximum score that can be obtained is 1000. The closer your score is to this value, the more likely you are to receive a salary of $100,000*")
+st.markdown("* Probability percentage: the probability (out of 100) that you will receive $100,000*")
+st.markdown("* The anticipated salary range: your current valuation in this industry")
+st.markdown("*: This value represents the salary of a data scientist with the relevant skill set, qualifications, experience and knowledge, keeping in mind the current market trend, that makes him/her greatly appreciated in the field.")
+st.write("")
+st.markdown("So Let's get predicting! :chart_with_upwards_trend:")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
 
-
+name = st.text_input(label='Enter your name:')
 gender = st.radio("1. What is your gender?", ('Male', 'Female'))
 q1_male = q1_female=0
 if gender == 'Male':
@@ -355,13 +377,49 @@ if st.button('Submit'):
 	li = {'input_data': li,
 		'score': score,
 		'proba': proba}
-	st.write(score,proba)
+	st.success('Form succesfully submitted!')
+	
 	my_bar = st.progress(0)
 	for percent_complete in range(100):
 		tm.sleep(0.05)
 		my_bar.progress(percent_complete+1)
 	my_bar.empty()
-	st.write('Form succesfully submitted')
-	
 	st.balloons()
 	score = int(score)
+	
+	if score<200:
+		new_salary='20,000 to 30,000'
+	elif score>=300 and score<300:
+		new_salary='30,000 to 40,000'
+	elif score>=300 and score<400:
+		new_salary='40,000 to 50,000'
+	elif score>=400 and score<500:
+		new_salary='50,000 to 60,000'
+	elif score>=500 and score<600:
+		new_salary='60,000 to 70,000'
+	elif score>=600 and score<700:
+		new_salary='70,000 to 80,000'
+	elif score>=700 and score<800:
+		new_salary='80,000 to 90,000'
+	elif score>=800 and score<900:
+		new_salary='90,000 to 100,000'
+	else:
+		new_salary='more than 100,000'
+	
+	st.markdown('##')
+	st.write("Hi", name, ", your predicted score out of 1000 is", score, "and percentage chances of earning $100,000 per year with this score is",proba)
+	st.write('Furthermore, upon recruitment your range of salary could be',new_salary,'USD')	
+	fig1 = plt.figure()
+	new_score = (score*100) + 10000
+	st.write('The graph below shows the average salary of a Data Scientist in USD and your predicted salary after running through your profile:')
+	st.markdown('#')
+	fig = plt.figure()
+	avg = 100000
+	ax = fig.add_axes([0,0,1,1])
+	ax.set_ylabel("Salary in USD")
+	people = ['Average salary', 'Your salary']
+	sal = [avg,new_score]
+	ax.bar(people,sal,color=['#148F77','#D68910'])
+	st.write(fig)
+	st.write("")
+	st.subheader("Thank you for using ISP!")
