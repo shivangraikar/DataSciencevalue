@@ -15,7 +15,7 @@ import base64
 
 st.set_page_config(
 page_title="ISP",
-page_icon="logo.png",
+page_icon="logo.PNG",
 layout="centered",
 )
 
