@@ -1,5 +1,49 @@
-## INTELLIGENT SALARY PREDICTOR
+# INTELLIGENT SALARY PREDICTOR 📈💰
 
-Machine Learning has advanced, web applications make it possible to deploy Machine Learning systems and access it through a web host. Our project focuses on this very ideology and is an attempt to create a web application that accepts user input from a Form and predicts the probability of Salary to be earned annually. 
+![Project Banner](https://unsplash.com/photos/mcAUHlGirVs)
 
-The prediction is done by analyzing and comparing the user response with the dataset of the survey responses. This web application (INTELLIGENT SALARY PREDICTOR) is an integrated, efficient, and convenient application that provides another dimension, a new way, for Data scientists to know their standing in this particular field. It comprises a Logistic regression model to predict the intercept score and then use a formula to calculate the probability.
+## About
+
+Welcome to the Data Science Unicorn -- Intelligent Salary Predictor! 🚀
+
+As machine learning continues to advance, believe in making it accessible to everyone through intuitive web applications. Our project is a bold attempt to create a user-friendly web application that predicts the probability of your annual salary based on your input.
+
+### How It Works
+
+1. **User Input**: Simply fill out the form with your details, including experience, education, skills, and more.
+
+2. **Data Analysis**: The Intelligent Salary Predictor compares your responses with a vast dataset of survey responses.
+
+3. **Prediction**: Using a sophisticated Logistic Regression model, we calculate the intercept score and predict your salary probability.
+
+4. **Get Insights**: Get valuable insights into your standing within the industry and identify potential areas for growth.
+
+## Features
+
+- **User-Friendly Interface**: Our web application provides a seamless and intuitive experience for users of all skill levels.
+
+- **Efficient Prediction**: The Logistic Regression model ensures accurate and efficient salary predictions.
+
+- **Data Security**: We prioritize data privacy and security to protect your personal information, all information is cleared and reset before every use.
+
+## How to Use
+
+1. The app was initially hosted on Heroku, unfortunately, Heroku charges for deploying web applications to use their dynos. You can still download and run it locally.
+
+2. Fill out the form with your details and click "Predict."
+
+3. Voila! Get your predicted annual salary probability and insights.
+
+
+## Contributions
+
+Welcome contributions to improve the Intelligent Salary Predictor! If you have any ideas, bug fixes, or new features to add, please submit a pull request.
+
+## Get in Touch
+
+- 🌐 Website: [intelligent-salary-predictor.com](https://shivangraikar.github.io)
+- 📧 Email: [contact@intelligent-salary-predictor.com](mailto:shivangraikar@gmail.com)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
