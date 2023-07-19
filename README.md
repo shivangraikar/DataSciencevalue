@@ -41,8 +41,8 @@ Welcome contributions to improve the Intelligent Salary Predictor! If you have a
 
 ## Get in Touch
 
-- 🌐 Website: [intelligent-salary-predictor.com](https://shivangraikar.github.io)
-- 📧 Email: [contact@intelligent-salary-predictor.com](mailto:shivangraikar@gmail.com)
+- 🌐 Website: [Developer-Profile](https://shivangraikar.github.io)
+- 📧 Email: [Contact-ID](mailto:shivangraikar@gmail.com)
 
 ## License
 
