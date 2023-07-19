@@ -1,6 +1,6 @@
 # INTELLIGENT SALARY PREDICTOR 📈💰
 
-![Project Banner](https://unsplash.com/photos/mcAUHlGirVs)
+![Project Banner](https://github.com/shivangraikar/DataSciencevalue/blob/main/desktop.jpg)
 
 ## About
 
