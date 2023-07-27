@@ -1,4 +1,4 @@
-# DATA SCIENCE UNICORN VALUE📈💰
+# ARE YOU A DATA SCIENCE UNICORN? 📈💰
 
 ![Project Banner](https://github.com/shivangraikar/DataSciencevalue/blob/main/desktop.jpg)
 
