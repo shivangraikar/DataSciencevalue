@@ -20,7 +20,7 @@ layout="centered",
 )
 
 st.markdown('#')
-st.title('Intelligent Salary Predictor')
+st.title('Are you a Data science unicorn?')
 st.write("")
 st.write("")
 st.write("Welcome User! This intelligent salary predictor(ISP) helps you assess yourself in the field of data science. How? It's easy! Just fill in the survey form.")
