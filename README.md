@@ -1,4 +1,4 @@
-# INTELLIGENT SALARY PREDICTOR 📈💰
+# DATA SCIENCE UNICORN VALUE📈💰
 
 ![Project Banner](https://github.com/shivangraikar/DataSciencevalue/blob/main/desktop.jpg)
 
